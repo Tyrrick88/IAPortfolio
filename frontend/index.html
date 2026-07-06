@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atieno Ongon'ga — On Air. On Trend. On Mic.</title>
+<meta name="description" content="Atieno Ongon'ga — Radio Presenter, Fashion & Lifestyle Influencer, Podcast Host based in Nairobi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cdot"></div>
+<div class="cursor-ring" id="cring"></div>
+<div class="progress" id="progress"></div>
+
+<header id="siteHeader">
+  <div class="logo" aria-label="IAMATIENO">
+    <svg class="logo-mark" width="37" height="37" viewBox="0 0 44 44" aria-hidden="true">
+      <circle cx="22" cy="22" r="19.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <text x="22" y="26.5" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-weight="700" font-size="17" fill="currentColor">IA</text>
+      <g transform="translate(13,33)" fill="currentColor">
+        <rect x="0" y="-3" width="2.2" height="3" rx="1"/>
+        <rect x="3.6" y="-6.5" width="2.2" height="6.5" rx="1"/>
+        <rect x="7.2" y="-2" width="2.2" height="2" rx="1"/>
+        <rect x="10.8" y="-5.5" width="2.2" height="5.5" rx="1"/>
+        <rect x="14.4" y="-1.5" width="2.2" height="1.5" rx="1"/>
+      </g>
+      <circle class="logo-dot" cx="37.5" cy="6.5" r="3.2" fill="currentColor"/>
+    </svg>
+    <span class="logo-word">IAMATIENO</span>
+  </div>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="fullmenu" id="fullMenu">
+  <a href="#about" class="menu-link"><span>01 — About</span></a>
+  <a href="#onair" class="menu-link"><span>02 — On Air</span></a>
+  <a href="#diary" class="menu-link"><span>03 — Style Diary</span></a>
+  <a href="#fitness" class="menu-link"><span>04 — Fit &amp; Focused</span></a>
+  <a href="#eats" class="menu-link"><span>05 — Plate by Plate</span></a>
+  <a href="#podcast" class="menu-link"><span>06 — Podcast</span></a>
+  <a href="#contact" class="menu-link"><span>07 — Contact</span></a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="heroSection">
+  <span class="hero-frame-num">NAIROBI, KE — 01</span>
+  <div class="hero-left">
+    <div class="onair-badge hero-eyebrow">
+      <span class="onair-dot"></span> On Air Now · Vibe FM Nairobi
+    </div>
+    <h1>
+      <span class="line"><span>ATIENO</span></span>
+      <span class="line"><span>Ongon'ga</span></span>
+    </h1>
+    <p class="hero-sub">Radio presenter, fashion &amp; lifestyle storyteller, fitness devotee, and host of <em>Unfiltered with Atieno</em> — bringing Nairobi's culture, workouts, and best plates to the airwaves, the feed, and your headphones.</p>
+    <div class="hero-socials">
+      <a href="#" aria-label="Instagram">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="#" aria-label="TikTok">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M16.5 3c.4 2.2 1.8 3.7 4 4v3c-1.5 0-2.9-.4-4-1.2v6.4c0 3.3-2.7 5.8-5.9 5.5-2.8-.3-5-2.6-5.1-5.4-.2-3.3 2.4-6 5.6-6 .3 0 .6 0 .9.1v3.2c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.3-2.5 2.9.1 1.2 1.1 2.2 2.3 2.3 1.5.2 2.8-1 2.8-2.5V3h2.8z"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter/X">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="img-clip">
+      <img src="images/hero-portrait.jpeg" alt="Atieno Ongon'ga editorial portrait">
+    </div>
+    <button class="hero-tab" data-cursor="hover">Listen Live <span class="onair-dot"></span></button>
+  </div>
+  <div class="scroll-cue">
+    <span class="eyebrow">Scroll</span>
+    <div class="stick"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-band">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>Radio Presenter</span><span>Fashion &amp; Lifestyle</span><span>Fitness Devotee</span><span>Podcast Host</span><span>Restaurant Reviewer</span><span>Nairobi Born</span>
+    <span>Radio Presenter</span><span>Fashion &amp; Lifestyle</span><span>Fitness Devotee</span><span>Podcast Host</span><span>Restaurant Reviewer</span><span>Nairobi Born</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about section-pad" id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num eyebrow">01 / About</div>
+        <h2>The voice behind the mic</h2>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgMTEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFBMEUxRiIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1QjJBNzMiLz4KPC9saW5lYXJHcmFkaWVudD4KPHBhdHRlcm4gaWQ9InAiIHdpZHRoPSI0MiIgaGVpZ2h0PSI0MiIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDM1KSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxsaW5lIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSI0MiIgc3Ryb2tlPSIjRkJGMUU2IiBzdHJva2Utb3BhY2l0eT0iMC4wNyIgc3Ryb2tlLXdpZHRoPSIxNCIvPgo8L3BhdHRlcm4+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSIxMTAwIiBmaWxsPSJ1cmwoI2cpIi8+CjxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iMTEwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTAuMCw1MjAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCRjFFNiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iI0ZCRjFFNiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjYyNC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSI0Ni44IiBmaWxsPSIjRkJGMUU2Ij5JTiBUSEUgU1RVRElPPC90ZXh0Pgo8dGV4dCB4PSI1MCUiIHk9IjY4NC44IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGxldHRlci1zcGFjaW5nPSIyIiBmb250LXNpemU9IjIxLjYiIGZpbGw9IiNmMGRmZTYiPkFCT1VUIFBIT1RPIMK3IFJFUExBQ0UgTUU8L3RleHQ+Cjwvc3ZnPg==" alt="Atieno in the studio">
+      </div>
+      <div>
+        <p class="about-quote reveal"><span class="mark">"</span>I don't just talk into a microphone — I talk to a city that's always listening, always dressing up, always tuning in.<span class="mark">"</span></p>
+        <p class="about-body reveal">Atieno Ongon'ga is one of Nairobi's most recognisable on-air voices, known for her drive-time show, her eye for style, and a podcast that says the things people are already thinking. Across radio, runway, and RSS feed, her throughline is the same: honest, warm, unmistakably Kenyan.</p>
+        <div class="stat-row reveal">
+          <div class="stat"><b>7</b><span>Years On Air</span></div>
+          <div class="stat"><b>120+</b><span>Episodes Hosted</span></div>
+          <div class="stat"><b>25</b><span>Brand Collabs</span></div>
+          <div class="stat"><b>60+</b><span>Restaurants Reviewed</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ON AIR -->
+<section class="onair section-pad" id="onair">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num eyebrow">02 / On Air</div>
+        <h2 style="color:var(--cream)">Drive time, her time</h2>
+      </div>
+      <div class="onair-badge" style="color:var(--gold)"><span class="onair-dot" style="background:var(--gold)"></span> Live Weekdays</div>
+    </div>
+    <div class="onair-grid">
+      <div class="wave-panel reveal">
+        <div class="wave-bars" id="waveBars"></div>
+        <div class="now-playing">
+          <span>Now Playing — "Jiji Yangu" mix</span>
+          <span class="eq" style="color:var(--gold)"><span></span><span></span><span></span><span></span></span>
+        </div>
+      </div>
+      <div class="reveal">
+        <ul class="show-list">
+          <li><span class="show-time">06:00 – 09:00</span><span class="show-name">The Morning Rush</span><span class="show-tag">Weekdays</span></li>
+          <li><span class="show-time">16:00 – 18:00</span><span class="show-name">Drive Time with Atieno</span><span class="show-tag">Weekdays</span></li>
+          <li><span class="show-time">19:00 – 20:00</span><span class="show-name">Style &amp; the City</span><span class="show-tag">Fridays</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STYLE DIARY -->
+<section class="diary section-pad" id="diary">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num eyebrow">03 / Style Diary</div>
+        <h2>Pictures do the talking</h2>
+      </div>
+    </div>
+    <div class="gallery reveal">
+      <div class="g-item g1" data-cursor="hover"><img src="images/style-1-street.jpeg" alt="Street style, Nairobi CBD"><span class="g-cap">Street Style — Nairobi CBD</span></div>
+      <div class="g-item g2" data-cursor="hover"><img src="images/style-2-studio.png" alt="Studio look, Westlands"><span class="g-cap">Studio — Westlands</span></div>
+      <div class="g-item g3" data-cursor="hover"><img src="images/style-3-offduty.png" alt="Off duty look"><span class="g-cap">Off-Duty</span></div>
+      <div class="g-item g4" data-cursor="hover"><img src="images/style-4-runway.png" alt="Runway ready look"><span class="g-cap">Runway Ready — NFW</span></div>
+      <div class="g-item g5" data-cursor="hover"><img src="images/style-5-bts.png" alt="Behind the scenes shoot"><span class="g-cap">Behind The Scenes</span></div>
+      <div class="g-item g6" data-cursor="hover"><img src="images/style-6-colour.png" alt="Colour story look"><span class="g-cap">Colour Story</span></div>
+      <div class="g-item g7" data-cursor="hover"><img src="images/style-7-goldenhour.png" alt="Golden hour editorial"><span class="g-cap">Golden Hour Editorial</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FITNESS -->
+<section class="fitness section-pad" id="fitness">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num eyebrow" style="color:var(--teal)">04 / Fit &amp; Focused</div>
+        <h2>Strong is a look too</h2>
+      </div>
+      <div class="onair-badge" style="color:var(--teal)"><span class="onair-dot" style="background:var(--teal)"></span> 5x a Week</div>
+    </div>
+    <div class="stat-row reveal" style="margin-bottom:44px;">
+      <div class="stat"><b style="color:var(--teal)">5</b><span>Workouts / Week</span></div>
+      <div class="stat"><b style="color:var(--teal)">47:12</b><span>10K Personal Best</span></div>
+      <div class="stat"><b style="color:var(--teal)">Strength</b><span>Favourite Discipline</span></div>
+    </div>
+    <div class="gallery reveal">
+      <div class="g-item g1" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNzAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTI3MjZBIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0YyQjMzRCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiNGQkYxRTYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTAuMCwzMjAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCRjFFNiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iI0ZCRjFFNiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjQyNC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzNi40IiBmaWxsPSIjRkJGMUU2Ij41QU0gUlVOPC90ZXh0Pgo8dGV4dCB4PSI1MCUiIHk9IjQ3NC40IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGxldHRlci1zcGFjaW5nPSIyIiBmb250LXNpemU9IjE2LjgiIGZpbGw9IiNmMGRmZTYiPktBUlVSQSBGT1JFU1Q8L3RleHQ+Cjwvc3ZnPg==" alt="Early morning run, Karura Forest"><span class="g-cap">5AM Run — Karura Forest</span></div>
+      <div class="g-item g2" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgMTAwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFBMEUxRiIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMjcyNkEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHBhdHRlcm4gaWQ9InAiIHdpZHRoPSI0MiIgaGVpZ2h0PSI0MiIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDM1KSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxsaW5lIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSI0MiIgc3Ryb2tlPSIjRkJGMUU2IiBzdHJva2Utb3BhY2l0eT0iMC4wNyIgc3Ryb2tlLXdpZHRoPSIxNCIvPgo8L3BhdHRlcm4+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSIxMDAwIiBmaWxsPSJ1cmwoI2cpIi8+CjxyZWN0IHdpZHRoPSI3MDAiIGhlaWdodD0iMTAwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTAuMCw0NzAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCRjFFNiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iI0ZCRjFFNiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjU3NC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzNi40IiBmaWxsPSIjRkJGMUU2Ij5TVFJFTkdUSCBEQVk8L3RleHQ+Cjx0ZXh0IHg9IjUwJSIgeT0iNjI0LjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgbGV0dGVyLXNwYWNpbmc9IjIiIGZvbnQtc2l6ZT0iMTYuOCIgZmlsbD0iI2YwZGZlNiI+SE9NRSBHWU0gU0VTU0lPTjwvdGV4dD4KPC9zdmc+" alt="Strength training session"><span class="g-cap">Strength Day — Home Gym</span></div>
+      <div class="g-item g3" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNzAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRjJCMzNEIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGM0U3QSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiMxQTBFMUYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTAuMCwzMjAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFBMEUxRiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iIzFBMEUxRiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjQyNC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzNi40IiBmaWxsPSIjMUEwRTFGIj5QT1NUIFdPUktPVVQ8L3RleHQ+Cjx0ZXh0IHg9IjUwJSIgeT0iNDc0LjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgbGV0dGVyLXNwYWNpbmc9IjIiIGZvbnQtc2l6ZT0iMTYuOCIgZmlsbD0iIzFBMEUxRiI+R0xPVyBFRElUPC90ZXh0Pgo8L3N2Zz4=" alt="Post workout glow"><span class="g-cap">Post-Workout Glow</span></div>
+      <div class="g-item g4" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNUIyQTczIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzEyNzI2QSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiNGQkYxRTYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTAuMCwyNzAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCRjFFNiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iI0ZCRjFFNiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjM3NC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzMS4yIiBmaWxsPSIjRkJGMUU2Ij5UUkFJTCBISUtFPC90ZXh0Pgo8dGV4dCB4PSI1MCUiIHk9IjQxOS4yIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGxldHRlci1zcGFjaW5nPSIyIiBmb250LXNpemU9IjE0LjQiIGZpbGw9IiNmMGRmZTYiPk5HT05HIEhJTExTPC90ZXh0Pgo8L3N2Zz4=" alt="Trail hike, Ngong Hills"><span class="g-cap">Trail Hike — Ngong Hills</span></div>
+      <div class="g-item g5" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTI3MjZBIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzVCMkE3MyIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiNGQkYxRTYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTAuMCwyNzAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCRjFFNiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iI0ZCRjFFNiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjM3NC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzMS4yIiBmaWxsPSIjRkJGMUU2Ij5ZT0dBIEZMT1c8L3RleHQ+Cjx0ZXh0IHg9IjUwJSIgeT0iNDE5LjIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgbGV0dGVyLXNwYWNpbmc9IjIiIGZvbnQtc2l6ZT0iMTQuNCIgZmlsbD0iI2YwZGZlNiI+U1VOUklTRSBTRVNTSU9OPC90ZXh0Pgo8L3N2Zz4=" alt="Sunrise yoga flow"><span class="g-cap">Yoga Flow — Sunrise Session</span></div>
+      <div class="g-item g6" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNzAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkYzRTdBIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzEyNzI2QSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiNGQkYxRTYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTAuMCwzMjAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCRjFFNiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iI0ZCRjFFNiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjQyNC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzNi40IiBmaWxsPSIjRkJGMUU2Ij5SQUNFIERBWTwvdGV4dD4KPHRleHQgeD0iNTAlIiB5PSI0NzQuNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBsZXR0ZXItc3BhY2luZz0iMiIgZm9udC1zaXplPSIxNi44IiBmaWxsPSIjZjBkZmU2Ij5OQUlST0JJIDEwSzwvdGV4dD4KPC9zdmc+" alt="Race day, Nairobi 10K"><span class="g-cap">Race Day — Nairobi 10K</span></div>
+      <div class="g-item g7" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDcwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0YyQjMzRCIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMjcyNkEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHBhdHRlcm4gaWQ9InAiIHdpZHRoPSI0MiIgaGVpZ2h0PSI0MiIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDM1KSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxsaW5lIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSI0MiIgc3Ryb2tlPSIjMUEwRTFGIiBzdHJva2Utb3BhY2l0eT0iMC4wNyIgc3Ryb2tlLXdpZHRoPSIxNCIvPgo8L3BhdHRlcm4+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNzAwIiBmaWxsPSJ1cmwoI2cpIi8+CjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MDAuMCwzMjAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFBMEUxRiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iIzFBMEUxRiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjQyNC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzNi40IiBmaWxsPSIjMUEwRTFGIj5SRUNPVkVSWTwvdGV4dD4KPHRleHQgeD0iNTAlIiB5PSI0NzQuNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBsZXR0ZXItc3BhY2luZz0iMiIgZm9udC1zaXplPSIxNi44IiBmaWxsPSIjMUEwRTFGIj5TVFJFVENIICYgUkVTRVQ8L3RleHQ+Cjwvc3ZnPg==" alt="Recovery and stretch session"><span class="g-cap">Recovery — Stretch &amp; Reset</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EATS -->
+<section class="eats section-pad" id="eats">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num eyebrow" style="color:var(--pink-deep)">05 / Plate by Plate</div>
+        <h2>Nairobi, one table at a time</h2>
+      </div>
+    </div>
+    <div class="gallery reveal">
+      <div class="g-item g2" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgOTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRjJCMzNEIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFBMEUxRiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiMxQTBFMUYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTAuMCw0MjAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFBMEUxRiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iIzFBMEUxRiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjUyNC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzNi40IiBmaWxsPSIjMUEwRTFGIj5OWUFNQSBDSE9NQTwvdGV4dD4KPHRleHQgeD0iNTAlIiB5PSI1NzQuNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBsZXR0ZXItc3BhY2luZz0iMiIgZm9udC1zaXplPSIxNi44IiBmaWxsPSIjMUEwRTFGIj5LSUFNQlUgUk9BRDwvdGV4dD4KPC9zdmc+" alt="Nyama choma, Kiambu Road"><span class="g-rating">★ 4.6</span><span class="g-cap">Nyama Choma — Kiambu Road</span></div>
+      <div class="g-item g1" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNzAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkYzRTdBIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0YyQjMzRCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiMxQTBFMUYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTAuMCwzMjAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFBMEUxRiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iIzFBMEUxRiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjQyNC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzNi40IiBmaWxsPSIjMUEwRTFGIj5CUlVOQ0ggUExBVEU8L3RleHQ+Cjx0ZXh0IHg9IjUwJSIgeT0iNDc0LjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgbGV0dGVyLXNwYWNpbmc9IjIiIGZvbnQtc2l6ZT0iMTYuOCIgZmlsbD0iIzFBMEUxRiI+S0lMSU1BTkkgQ0FGRTwvdGV4dD4KPC9zdmc+" alt="Brunch plate, Kilimani cafe"><span class="g-rating">★ 4.8</span><span class="g-cap">Brunch — Kilimani Cafe</span></div>
+      <div class="g-item g4" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMUEwRTFGIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0YyQjMzRCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiNGQkYxRTYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTAuMCwyNzAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCRjFFNiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iI0ZCRjFFNiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjM3NC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzMS4yIiBmaWxsPSIjRkJGMUU2Ij5TVFJFRVQgRUFUUzwvdGV4dD4KPHRleHQgeD0iNTAlIiB5PSI0MTkuMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBsZXR0ZXItc3BhY2luZz0iMiIgZm9udC1zaXplPSIxNC40IiBmaWxsPSIjZjBkZmU2Ij5OQUlST0JJIENCRDwvdGV4dD4KPC9zdmc+" alt="Street food, Nairobi CBD"><span class="g-rating">★ 4.5</span><span class="g-cap">Street Eats — Nairobi CBD</span></div>
+      <div class="g-item g5" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNUIyQTczIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0YyQjMzRCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiNGQkYxRTYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTAuMCwyNzAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCRjFFNiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iI0ZCRjFFNiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjM3NC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzMS4yIiBmaWxsPSIjRkJGMUU2Ij5ST09GVE9QIERJTk5FUjwvdGV4dD4KPHRleHQgeD0iNTAlIiB5PSI0MTkuMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBsZXR0ZXItc3BhY2luZz0iMiIgZm9udC1zaXplPSIxNC40IiBmaWxsPSIjZjBkZmU2Ij5XRVNUTEFORFM8L3RleHQ+Cjwvc3ZnPg==" alt="Rooftop dinner, Westlands"><span class="g-rating">★ 4.9</span><span class="g-cap">Rooftop Dinner — Westlands</span></div>
+      <div class="g-item g3" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgOTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTI3MjZBIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0YyQjMzRCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiNGQkYxRTYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTAuMCw0MjAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCRjFFNiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iI0ZCRjFFNiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjUyNC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzNi40IiBmaWxsPSIjRkJGMUU2Ij5DT0FTVEFMIEZMQVZPVVJTPC90ZXh0Pgo8dGV4dCB4PSI1MCUiIHk9IjU3NC40IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGxldHRlci1zcGFjaW5nPSIyIiBmb250LXNpemU9IjE2LjgiIGZpbGw9IiNmMGRmZTYiPlNXQUhJTEkgRElTSDwvdGV4dD4KPC9zdmc+" alt="Coastal Swahili dish"><span class="g-rating">★ 4.7</span><span class="g-cap">Coastal Flavours</span></div>
+      <div class="g-item g6" data-cursor="hover"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNzAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRjJCMzNEIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGM0U3QSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0dGVybiBpZD0icCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMzUpIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiBzdHJva2U9IiMxQTBFMUYiIHN0cm9rZS1vcGFjaXR5PSIwLjA3IiBzdHJva2Utd2lkdGg9IjE0Ii8+CjwvcGF0dGVybj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idXJsKCNwKSIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTAuMCwzMjAuMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFBMEUxRiIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjg1Ij4KPGNpcmNsZSByPSI0NiIvPgo8Y2lyY2xlIHI9IjE4Ii8+CjxyZWN0IHg9Ii02NCIgeT0iLTU4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iIzFBMEUxRiIgc3Ryb2tlPSJub25lIiBvcGFjaXR5PSIwLjkiLz4KPC9nPgo8dGV4dCB4PSI1MCUiIHk9IjQyNC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIzNi40IiBmaWxsPSIjMUEwRTFGIj5ERVNTRVJUIFRBQkxFPC90ZXh0Pgo8dGV4dCB4PSI1MCUiIHk9IjQ3NC40IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGxldHRlci1zcGFjaW5nPSIyIiBmb250LXNpemU9IjE2LjgiIGZpbGw9IiMxQTBFMUYiPlNXRUVUIEZJTklTSDwvdGV4dD4KPC9zdmc+" alt="Dessert table"><span class="g-rating">★ 4.8</span><span class="g-cap">Dessert Table</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PODCAST -->
+<section class="podcast section-pad" id="podcast">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num eyebrow">06 / The Podcast</div>
+        <h2>Unfiltered with Atieno</h2>
+      </div>
+    </div>
+    <div class="ep-list reveal">
+      <div class="ep" data-cursor="play">
+        <div class="ep-play"></div>
+        <div>
+          <div class="ep-title">Ep. 42 — The Business of Being Seen</div>
+          <div class="ep-meta">with guest Wanjiru Kariuki · 48 min</div>
+        </div>
+        <div class="ep-right"><span class="ep-eq">●</span> 12.4k plays</div>
+      </div>
+      <div class="ep" data-cursor="play">
+        <div class="ep-play"></div>
+        <div>
+          <div class="ep-title">Ep. 41 — Radio Taught Me to Listen</div>
+          <div class="ep-meta">Solo episode · 33 min</div>
+        </div>
+        <div class="ep-right"><span class="ep-eq">●</span> 9.8k plays</div>
+      </div>
+      <div class="ep" data-cursor="play">
+        <div class="ep-play"></div>
+        <div>
+          <div class="ep-title">Ep. 40 — Dressing For Nairobi Weather</div>
+          <div class="ep-meta">with guest Otieno Mbogo · 41 min</div>
+        </div>
+        <div class="ep-right"><span class="ep-eq">●</span> 15.1k plays</div>
+      </div>
+      <div class="ep" data-cursor="play">
+        <div class="ep-play"></div>
+        <div>
+          <div class="ep-title">Ep. 39 — Off Air, On Record</div>
+          <div class="ep-meta">Solo episode · 29 min</div>
+        </div>
+        <div class="ep-right"><span class="ep-eq">●</span> 11.2k plays</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<div class="brands">
+  <div class="wrap">
+    <div class="brands-label eyebrow reveal">Trusted By &amp; Collaborated With</div>
+  </div>
+  <div class="brands-track" id="brandsTrack">
+    <div>ANKARA HOUSE</div><div>NAIROBI FASHION WEEK</div><div>SAVANNA COSMETICS</div><div>URBAN THREAD CO.</div><div>VIBE FM</div>
+    <div>ANKARA HOUSE</div><div>NAIROBI FASHION WEEK</div><div>SAVANNA COSMETICS</div><div>URBAN THREAD CO.</div><div>VIBE FM</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact section-pad" id="contact">
+  <div class="wrap contact-inner">
+    <div class="onair-badge reveal" style="justify-content:center;color:var(--gold)"><span class="onair-dot" style="background:var(--gold)"></span> Let's Work Together</div>
+    <h2 class="reveal"><a href="mailto:hello@atienoongonga.co.ke" class="contact-link" data-cursor="hover">Say Hello</a></h2>
+    <p class="contact-sub reveal">hello@atienoongonga.co.ke · Nairobi, Kenya</p>
+    <div class="contact-socials reveal">
+      <a href="#" data-cursor="hover">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+      <a href="#" data-cursor="hover">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M16.5 3c.4 2.2 1.8 3.7 4 4v3c-1.5 0-2.9-.4-4-1.2v6.4c0 3.3-2.7 5.8-5.9 5.5-2.8-.3-5-2.6-5.1-5.4-.2-3.3 2.4-6 5.6-6 .3 0 .6 0 .9.1v3.2c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.3-2.5 2.9.1 1.2 1.1 2.2 2.3 2.3 1.5.2 2.8-1 2.8-2.5V3h2.8z"/></svg>
+        TikTok
+      </a>
+      <a href="#" data-cursor="hover">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"/></svg>
+        Twitter / X
+      </a>
+      <a href="#" data-cursor="hover">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg>
+        YouTube
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Atieno Ongon'ga — Site design by Tytech Solutions</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
