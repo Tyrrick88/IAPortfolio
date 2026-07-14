@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <rect width="44" height="44" rx="10" fill="#1a0e1f"/>
+  <circle cx="22" cy="22" r="16.5" fill="none" stroke="#fbf1e6" stroke-width="1.6"/>
+  <text x="22" y="26.5" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="15" fill="#fbf1e6">IA</text>
+  <circle cx="35" cy="8" r="3.2" fill="#f2b33d"/>
+</svg>
