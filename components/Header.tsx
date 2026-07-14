@@ -82,12 +82,13 @@ export default function Header() {
             id="fullmenu"
             className="fullmenu"
             aria-label="Site navigation"
+            data-lenis-prevent
             initial="closed"
             animate="open"
             exit="closed"
             variants={menuVariants}
           >
-            <motion.div variants={listVariants} initial="closed" animate="open" exit="closed">
+            <motion.div className="menu-list" variants={listVariants} initial="closed" animate="open" exit="closed">
               {MENU_LINKS.map((link) => (
                 <a key={link.href} href={link.href} className="menu-link" onClick={(e) => onNav(e, link.href)}>
                   <span style={{ display: "block", overflow: "hidden" }}>
